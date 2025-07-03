@@ -1,0 +1,91 @@
+backend/
+├── src/
+│   ├── controllers/
+│   │   ├── authController.js      # Login, register, logout
+│   │   ├── userController.js      # User management
+│   │   ├── evaluationController.js # BerAKHLAK evaluations
+│   │   ├── periodController.js    # Period management
+│   │   ├── attendanceController.js # Presensi
+│   │   ├── ckpController.js       # CKP scores
+│   │   └── reportController.js    # Reports & analytics
+│   │
+│   ├── routes/
+│   │   ├── index.js              # Main router
+│   │   ├── auth.js               # Auth routes
+│   │   ├── users.js              # User routes
+│   │   ├── evaluations.js        # Evaluation routes
+│   │   ├── periods.js            # Period routes
+│   │   ├── attendance.js         # Attendance routes
+│   │   ├── ckp.js                # CKP routes
+│   │   └── reports.js            # Report routes
+│   │
+│   ├── middlewares/
+│   │   ├── auth.js               # Authentication middleware
+│   │   ├── authorization.js      # Role-based access control
+│   │   ├── validation.js         # Input validation
+│   │   ├── errorHandler.js       # Global error handler
+│   │   └── rateLimiter.js        # Rate limiting
+│   │
+│   ├── services/
+│   │   ├── authService.js        # Authentication logic
+│   │   ├── userService.js        # User business logic
+│   │   ├── evaluationService.js  # Evaluation calculations
+│   │   ├── reportService.js      # Report generation
+│   │   └── notificationService.js # Email/notification
+│   │
+│   ├── utils/
+│   │   ├── calculations.js       # Score calculations
+│   │   ├── helpers.js            # General helpers
+│   │   ├── constants.js          # App constants
+│   │   ├── logger.js             # Logging utility
+│   │   └── dateUtils.js          # Date utilities
+│   │
+│   ├── validators/
+│   │   ├── authValidator.js      # Login/register validation
+│   │   ├── userValidator.js      # User input validation
+│   │   ├── evaluationValidator.js # Evaluation validation
+│   │   └── common.js             # Common validations
+│   │
+│   ├── config/
+│   │   ├── database.js           # Database config
+│   │   ├── jwt.js                # JWT config
+│   │   ├── cors.js               # CORS config
+│   │   └── app.js                # App configuration
+│   │
+│   └── types/                    # TypeScript types (jika pakai TS)
+│       ├── user.js
+│       ├── evaluation.js
+│       └── common.js
+│
+├── prisma/
+│   ├── schema.prisma             # Database schema
+│   ├── migrations/               # Auto-generated migrations
+│   └── seed.js                   # Seed data script
+│
+├── tests/
+│   ├── unit/                     # Unit tests
+│   ├── integration/              # Integration tests
+│   ├── fixtures/                 # Test data
+│   └── helpers/                  # Test utilities
+│
+├── uploads/                      # File uploads (jika ada)
+├── logs/                         # Application logs
+├── docs/                         # Documentation
+│   ├── api/                      # API documentation
+│   ├── deployment/               # Deployment guides
+│   └── user-manual/              # User manuals
+│
+├── database/                     # Database utilities
+│   ├── backups/                  # Database backups
+│   ├── scripts/                  # Utility scripts
+│   └── migrations/               # Manual migrations
+│
+├── .env                          # Environment variables
+├── .env.example                  # Environment template
+├── .gitignore                    # Git ignore rules
+├── package.json                  # Dependencies
+├── package-lock.json             # Lock file
+├── server.js                     # Entry point
+├── app.js                        # Express app setup
+└── README.md                     # Project documentation
+
